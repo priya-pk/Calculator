@@ -17,9 +17,9 @@ export class CalculatorComponent implements OnInit {
   }
 
   public getNumber(v: string){
-    // console.log(v);
+    console.log(v);
     if(this.waitForSecondNumber)
-    {
+    { 
       this.currentNumber = v;
       this.waitForSecondNumber = false;
     }else{
@@ -49,7 +49,7 @@ export class CalculatorComponent implements OnInit {
   }
   
   public getOperation(op: string){
-    // console.log(op);
+    console.log(op);
 
     if(this.firstOperand === null){
       this.firstOperand = Number(this.currentNumber);
@@ -62,7 +62,7 @@ export class CalculatorComponent implements OnInit {
     this.operator = op;
     this.waitForSecondNumber = true;
 
-    // console.log(this.firstOperand);
+    console.log(this.firstOperand,'correct');
 
   }
   public clear(){
