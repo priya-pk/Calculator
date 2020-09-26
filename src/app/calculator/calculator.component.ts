@@ -62,7 +62,7 @@ export class CalculatorComponent implements OnInit {
     this.operator = op;
     this.waitForSecondNumber = true;
 
-    console.log(this.firstOperand);
+    console.log(this.firstOperand,"feferf");
 
   }
   public clear(){
